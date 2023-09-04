@@ -1,3 +1,5 @@
+package essencialsJava;
+
 import java.util.Scanner;
 
 public class Escola {
@@ -13,7 +15,7 @@ public class Escola {
         scanner.nextLine();
 
         for (int i = 1; i <= numeroEstudantes; i++) {
-            System.out.println("Estudante #" + i);
+            System.out.println("\nEstudante #" + i);
             System.out.print("Digite o nome: ");
             String nomeEstudante = scanner.nextLine();
 
