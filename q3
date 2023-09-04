@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class EmpresaBar {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o número da mesa: ");
+        int numeroMesa = scanner.nextInt();
+
+        double valorTotal = 0.0;
+
+        for (int i = 1; i <= 3; i++) {
+            scanner.nextLine(); 
+
+            System.out.println("Pedido #" + i);
+            System.out.print("Nome do pedido: ");
+            String nomeProduto = scanner.nextLine();
+
+            System.out.print("Valor do pedido: ");
+            double valorProduto = scanner.nextDouble();
+
+            System.out.print("Quantidade de pedidos: ");
+            int quantidade = scanner.nextInt();
+
+            double subtotal = valorProduto * quantidade;
+            valorTotal += subtotal;
+
+            System.out.println("Produto: " + nomeProduto);
+            System.out.println("Valor: " + valorProduto);
+            System.out.println("Quantidade: " + quantidade);
+            System.out.println("Subtotal: " + subtotal);
+        }
+
+        System.out.println("Número da mesa: " + numeroMesa);
+        System.out.println("Valor total: " + valorTotal);
+
+        scanner.close();
+    }
+}
