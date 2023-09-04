@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class PrimeiraQuestao {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o nome completo: ");
+        String nomeCompleto = scanner.nextLine();
+
+        System.out.print("Digite o primeiro valor: ");
+        int primeiroValor = scanner.nextInt();
+
+        System.out.print("Digite o segundo valor: ");
+        int segundoValor = scanner.nextInt();
+
+        double divisao = (double) primeiroValor / segundoValor;
+
+        System.out.println("Nome completo: " + nomeCompleto);
+        System.out.println("Primeiro valor: " + primeiroValor);
+        System.out.println("Segundo valor: " + segundoValor);
+        System.out.println("Resultado: " + divisao);
+
+        scanner.close();
+    }
+}
