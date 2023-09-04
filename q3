@@ -1,3 +1,5 @@
+package essencialsJava;
+
 import java.util.Scanner;
 
 public class EmpresaBar {
@@ -12,7 +14,7 @@ public class EmpresaBar {
         for (int i = 1; i <= 3; i++) {
             scanner.nextLine(); 
 
-            System.out.println("Pedido #" + i);
+            System.out.println("\nPedido #" + i);
             System.out.print("Nome do pedido: ");
             String nomeProduto = scanner.nextLine();
 
